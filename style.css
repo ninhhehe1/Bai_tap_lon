@@ -1,0 +1,265 @@
+body { 
+    margin: 0; 
+    padding: 0; 
+    font-family: Arial, sans-serif; 
+    background: url('path/to/your/rose-falling.gif') no-repeat center center fixed; 
+    background-size: cover; 
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color:#635941;
+    padding: 10px;
+    border-bottom: solid 2px black;
+    border-top: solid 2px black;
+}
+
+.navbar a {
+    display: block;
+}
+
+.logo {
+    height: 40px; /* Điều chỉnh kích thước logo */
+    margin-right: 180px;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu .tieude {
+    position: relative;
+}
+
+.menu .tieude a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu .tieude a:hover {
+    background-color: #575757;
+}
+
+.dropdown .subMenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #003c71;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 200px; /* Tăng chiều rộng của bảng con */
+}
+
+.dropdown:hover .subMenu {
+    display: block;
+}
+
+.subMenu li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    white-space: nowrap; /* Đảm bảo không xuống dòng */
+}
+
+.subMenu li a:hover {
+    background-color: #575757;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container i {
+    color: white;
+    margin-right: 8px;
+}
+
+.search-input {
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.notification-item a,
+.buy-package-item a,
+.login-item a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+.buy-package-button {
+    display: flex;
+    align-items: center;
+}
+
+.buy-package-button i {
+    margin-right: 5px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Chiều cao của hình ảnh */
+}
+
+.hinh2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Hiệu ứng mờ trên ảnh */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Khoảng cách giữa các trường input */
+}
+
+.input-field {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 300px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: yellow; /* Màu nền vàng cho nút tìm kiếm */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #f1c40f; /* Màu nền khi hover */
+}
+.flex { 
+    display: flex; 
+    justify-content: space-around; /* Chia đều các mục */ 
+    align-items: center; padding: 20px; 
+    background-color: #f9f9f9; /* Màu nền nhạt cho dễ nhìn */ } 
+.flex div { display: flex; 
+    align-items: center; 
+    gap: 10px; /* Khoảng cách giữa icon và text */ }
+.flex i { font-size: 24px; /* Kích thước icon */
+     color: #000; /* Màu icon */ }
+     /* style.css */
+.box2 {
+    height: 900px;
+    background-color: #feeec7;
+    display: flex;
+    justify-content: space-around; /* Chia đều các thẻ con */
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-image { width: 100%; 
+    height: 400px; /* Chiều cao cố định cho tất cả các ảnh */
+     object-fit: cover;
+}
+
+.card-title {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.rating {
+    font-size: 20px;
+    color: #ffa500; /* Màu vàng cho sao */
+}
+
+.highlights {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+    width: 100%;
+}
+
+.highlights li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.highlights li::before {
+    content: '•'; /* Dấu chấm trước mỗi mục */
+    color: #ffa500;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.price {
+    font-size: 24px;
+    color: #ff4500; /* Màu đỏ cam cho giá tiền */
+    margin-top: auto;
+    align-self: flex-end;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: #000000; /* Màu nền đen tuyền */
+    padding: 20px;
+    color: white; /* Màu chữ trắng */
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    height: 100%; /* Đặt chiều cao của footer-logo bằng chiều cao của div */
+}
+
+.footer-logo img {
+    height: 80px; /* Chiều cao cố định cho ảnh */
+    width: auto; /* Đảm bảo ảnh duy trì tỷ lệ */
+}
+
+.contact-info {
+    text-align: right; /* Căn phải cho thông tin liên hệ */
+}
+
+.contact-info p {
+    margin: 0; /* Loại bỏ khoảng cách mặc định */
+}
